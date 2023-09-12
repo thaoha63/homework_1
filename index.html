@@ -1,1 +1,116 @@
+<!-- Sima Ha 
 
+For the HTML Page, I mostly used the guide from W3 School as it pretty much has basic structure of code
+
+1) I started design/code my website putting everything in a container 
+
+2) I googled fonts in the Google Font to get the code href 
+
+/* Link for reference to help me code this website: 
+
+1) I find this https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight most useful 
+2) W3School 
+3) Mozilla like most of the basic content: https://developer.mozilla.org/en-US/docs/Learn/CSS
+4) Youtube Videos 
+*/
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+<!-- Roboto Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Connect CSS Link To HTML-->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Revasser</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <!-- logo -->
+          <div class="navbar__logo">
+            <img src="./food/logo.png" alt="website logo" />
+          </div>
+          <!-- Navigation Bar Links -->
+          <ul class="navbar__links">
+            <li class="navbar__link"><a href="#works">Work</a></li>
+            <li class="navbar__link"><a href="#about us">About</a></li>
+            <li class="navbar__link"><a href="#Cafe Menu">Menu</a></li>
+            <li class="navbar__link"><a href="#Conatct">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- banner -->
+    <section id="banner">
+      <div class="container">
+        <!-- img -->
+        <div class="banner__img">
+          <img src="./food/cf.jpeg" alt="picture of cafe" />
+        </div>
+        <!-- heading -->
+        <div class="banner__heading">
+          <h1>Welcome to Revasser Cafe!</h1>
+        </div>
+      </div>
+    </section>
+    <!-- Why Revasser -->
+    <section id="why_revasser">
+      <div class="container">
+        <!-- heading -->
+        <h2>Why Revasser</h2>
+        <!-- item 1 -->
+        <div class="reva__item">
+          <!-- img -->
+          <img src="./food/apple box.png" alt="Apple shape cake in a box" />
+          <!-- text -->
+          <div class="reva__item-description">
+            <h3>Lorem Ispum</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              consequatur provident, culpa quaerat fugit dolorem illum
+              repellendus quas quasi obcaecati quia aliquid odit! Vitae, non?
+            </p>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div class="reva__item">
+          <!-- img -->
+          <img src="./food/berry.jpeg" alt="Berry Cake" />
+          <!-- text -->
+          <div class="reva__item-description">
+            <h3>Lorem Ispum</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              consequatur provident, culpa quaerat fugit dolorem illum
+              repellendus quas quasi obcaecati quia aliquid odit! Vitae, non?
+            </p>
+          </div>
+        </div>
+        <!-- item 3 -->
+        <div class="reva__item">
+          <!-- img -->
+          <img src="./food/temni les.jpeg" alt="Popcorn Dessert" />
+          <!-- text -->
+          <div class="reva__item-description">
+            <h3>Lorem Ispum</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              consequatur provident, culpa quaerat fugit dolorem illum
+              repellendus quas quasi obcaecati quia aliquid odit! Vitae, non?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+/* Link for reference to help me code this website: 
+
+1) I find this https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight most useful 
+2) W3School 
+3) https://developer.mozilla.org/en-US/docs/Learn/CSS
+4) Youtube Video
+*/
+
+/* 1) https://stackoverflow.com/questions/32805670/what-does-before-and-after-do-in-css*/ 
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Makes Website to scroll smooth(learned that from Youtube)*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*Defining colors(Learned that from youtube)*/
+:root {
+  --pink: #F54748;
+  --dark-blue: #00008b;
+  --white: #FFFFFF;
+  --smooth: all 0.3s ease-in;
+}
+
+/* === Header === */
+header {
+  position: absolute; /* https://developer.mozilla.org/en-US/docs/Web/CSS/position*/ 
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* logo */
+.navbar__logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-left:40px;
+}
+
+/* Nav Bar */
+
+.navbar__link {
+  list-style: none; /* makeing nav title without dot at the beggining*/
+  margin: 55px;
+  text-decoration: none; /* Making text title without line */
+  font-weight: 300;
+  transition: var(--smooth);
+}
+
+.navbar__link a {
+  text-decoration: none; /* Making text title without line */
+  color: #fff;
+  font-weight: 300;
+  transition: var(--smooth);
+}
+
+/*  This is where i also got the code  and learn from: https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width/*/ 
+@media (min-width: 120px) {
+  .navbar__links {
+    position: initial;
+    transform: translateX(0);
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+/* === Why Revasser === */
+#why_revasser {
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 50px;
+}
+
+#why_revasser h2 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.reva__item {
+  margin: 20px 0;
+}
+
+
+/* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height*/ 
+
+.reva__item-description p {
+  font-weight: 300;
+  line-height: 32px;
+  max-width: 300px;
+  padding-top: 16px;
+}
+
+/* I learned this rule from W3School: https://www.w3schools.com/cssref/css3_pr_mediaquery.php
+
+It basically help to adjust the screen to different devices: Responsive*/
+
+@media (min-width: 120px) {
+  .reva__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .reva__item img {
+    width: 40%;
+    padding-bottom: 0;
+    margin-top: 64px;
+    margin-bottom: 29px;
+    maergin-left:43px;
+    margin-right:147px;
+
+  }
+  /* Heading Font and Adjust Center*/
+  .reva__item-description {
+    width: 40%;
+    text-align: initial;
+  }
+
+}
